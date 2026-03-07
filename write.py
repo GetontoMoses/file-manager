@@ -1,10 +1,8 @@
 # opening
-file = open("file.txt", "r", encoding="utf-16")
+with open("file.txt", "r", encoding="utf-16") as file:
 
-# read
-content = file.read()
-
-# display
-print(content)
-
-file.close()
+    # read
+    content = file.read()
+    
+    # display
+    print(content)
